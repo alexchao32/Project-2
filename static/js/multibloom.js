@@ -68,7 +68,7 @@ petals.on('mouseout', function(event){
 map.zoomTo( 2, 28, 3 );
 
 //load data
-$.getJSON("data/devindicators.json", function(data){
+$.getJSON("data/2015.json", function(data){
     aperture.util.forEach( data, function(country) {
         aperture.util.forEach( country.indicators, function(indicator, index) {
             var scalar = indicators[index];

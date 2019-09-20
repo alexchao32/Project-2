@@ -1,0 +1,16 @@
+***Steps for Boom JS file ***
+
+/ 1) Convert 2015 CSV World Happiness data to Json
+/ 2) Link Aperture JS file to Json data within "static folder"
+/ 3) Assign column values to pedals 
+/ 4) Attach JS file to Alex's html index
+
+
+Note look to d3 exercises as that is akin to aperture for petals
+
+Dear Maureen,
+
+Long time!  I've been meaning to reach out to you to see about chatting when the dust settles from the start of Fall semester (which, of course, never Happiness). 
+I am thrilled to be part of your online teaching team for 719/720 this year.  I have two questions for you when you get a chance:
+
+1) I am teaching our Public Policy Capstone course this year and one of my teams of five advanced undergraduates would like to ask you some que
