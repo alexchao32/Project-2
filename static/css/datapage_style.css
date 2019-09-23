@@ -1239,3 +1239,15 @@ a:hover {
 .pcss3t > ul > li {
 	height: 370px;
 }
+
+
+.btn:focus,
+.btn:active,
+.btn.active
+{
+  background-color: #ca5410;
+}
+
+.btn:hover
+{
+  background-color: #6d6a6a;

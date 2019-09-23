@@ -1,4 +1,5 @@
-var data = [{
+
+var data_2015 = [{
     "Country": "Switzerland",
     "Region": "Western Europe",
     "Happiness Rank": 1,
