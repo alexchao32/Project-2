@@ -47,7 +47,7 @@ def dataPage():
 
 @app.route("/hbarchart")
 def hbarchart():
-    """Return the data in table"""
+    """Return the data in table for loading the horizontal bar chart"""
     return render_template("hbarchart_index.html")
 
     # # Use Pandas to perform the sql query
