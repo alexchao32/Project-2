@@ -4,21 +4,53 @@
 
   <title>World Happiness Scores</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
+  <link rel="stylesheet" href="static/css/hbarchart_style.css">
+  
 </head>
 <body>
-  <h1>World Happiness Scores</h1>
-  <div id="map"></div>
-  <div id="table"></div>
-  
+  <h1 class="text-muted" style="color: purple">World Happiness Scores</h1>
+  <div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                  Featured
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">It's a broader card with text below as a natural lead-in to extra content. This content is a little longer.</p>
+                  <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                 <!-- buttons -->
+        <button id="btn_2018" type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off" onclick="loadfrom_getData(2018)">2018</button>
+        <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off" onclick="loadfrom_getData(2017)">2017</button>
+        <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off" onclick="loadfrom_getData(2016)">2016</button>
+        <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off" onclick="loadfrom_getData(2015)">2015</button>
+
+                </div>
+               </div>
+            <div class="card">
+                <div id="chartReport" class="card-body chart-container" >
+                    <canvas id="myChart" class="canvasclass"></canvas>
+                </div>
+               
+            
+            </div>
+        </div>
+     </div>
+ </div>
+ 
 
   <!-- CHART JS LIBRARY-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script>
   <!--<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>-->
 
 
-<canvas id="myChart"  width="1600" height="2900"></canvas>
-<script src="../static/js/hbarchart_app.js"></script>
+<!-- <canvas id="myChart"  ></canvas> -->
 
+</div>
+<script src="../static/js/hbarchart_app.js"></script>
 </body>
 </html>
 
