@@ -14,9 +14,9 @@ from flask_sqlalchemy import SQLAlchemy
 app = Flask(__name__)
 
 
-#################################################
+#########################################################################
 # Database Setup
-#################################################
+#########################################################################
 
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///db/HappinessPKv2.sqlite"
 app.config['JSON_SORT_KEYS'] = False
@@ -34,7 +34,9 @@ Base.prepare(db.engine, reflect=True)
 
 Happiness_table = Base.classes.Happiness
 
-
+#########################################################################
+#RENDER TEMPLATES FOR EACH ROUTE
+#########################################################################
 @app.route("/")
 def index():
     """Return the homepage."""
@@ -57,6 +59,9 @@ def hbarchart():
     # # Return a list of the column names (sample names)
     # return jsonify(list(df.columns)[2:])
 
+#########################################################################
+#QUERYING THE DB | STORING THE VALUES AS A DICT | JSONIFY THE DICTIONARY
+#########################################################################
 
 @app.route("/getdata/<year>")
 def get_data_year(year):
@@ -77,7 +82,7 @@ def get_data_year(year):
 
     results = db.session.query(*sel).filter(Happiness_table.Year == year).all()
 
-    # Create a dictionary entry for each row of metadata information
+    # Create a dictionary entry for each row
     happiness_list = []
     
     
@@ -98,6 +103,7 @@ def get_data_year(year):
         happiness_list.append(json_Happiness_table)
 
     print(json_Happiness_table)
+    #CONVERT THE LIST INTO JSON
     return jsonify(happiness_list)
 
 

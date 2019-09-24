@@ -76,8 +76,8 @@ var Dystopia=[]
 
 function loadChart() {
 
-//  jQuery(".canvasclass").remove;
-//  jQuery(".card-body chart-container").append('<canvas id="myChart" class="jQuery"></canvas>');
+//  $(".canvasclass").remove;
+//  $(".card-body chart-container").append('<canvas id="myChart" class="jQuery"></canvas>');
 
 //canvas.html("");
 
