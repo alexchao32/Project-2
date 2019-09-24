@@ -1,4 +1,9 @@
 //let MS=[44, 55, 41, 37, 22, 43, 200]
+
+//#########################################################################
+//INITIALIZING THE ARRAYS (to hold the values retreived from json)
+//#########################################################################
+
 var Country=[]
 var Economy=[]
 var Family=[]
@@ -21,7 +26,9 @@ var Dystopia=[]
 //select the table body using d3
 //var canvas = d3.select("canvas");
 
+//#########################################################################
 ///:LOADING FROM CSV
+//#########################################################################
 // function loadData(){
 //  d3.csv("static/js/2017.csv", function(csv) {
 
@@ -73,6 +80,9 @@ var Dystopia=[]
 //     };
 
 
+//#########################################################################
+//FUNCTION TO LOAD THE CHART USING CHART.js
+//#########################################################################
 
 function loadChart() {
 
@@ -154,7 +164,9 @@ stackedBar = new Chart(document.getElementById('myChart'), {
 
 };
 
-//LOADING from json
+//#########################################################################
+//LOADING DATA FROM JSON
+//#########################################################################
 
 function loadfrom_getData(year) {
   console.log("inside fucntion loadfrom_getData");

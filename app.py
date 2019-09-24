@@ -15,7 +15,7 @@ app = Flask(__name__)
 
 
 #########################################################################
-# Database Setup
+# DATABASE SETUP
 #########################################################################
 
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///db/HappinessPKv2.sqlite"

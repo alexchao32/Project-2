@@ -1,11 +1,15 @@
+
 // referring to the data from data.js
 var year=2018
 
-// YOUR CODE HERE!
+
 //select the table body using d3
 var tbody = d3.select("tbody");
 //console.log(data);
 
+//#########################################################################
+//FUNCTION TO LOAD DATA FROM JSON
+//#########################################################################
 
 function loadfrom_getData(year) {
     var getdataURL = "/getdata/" + String(year);
@@ -20,8 +24,10 @@ function loadfrom_getData(year) {
 
 }
 
-
+//#########################################################################
 //creating a function (happinessTable) to construct the table
+//#########################################################################
+
 function happinessTable(data) {
 
     
@@ -46,7 +52,10 @@ data.forEach(function(happinessData) {
 });
 }
 
+//#########################################################################
 //create a function (filterCountry) for filtering the table using a date input from user
+//#########################################################################
+
 function filterCountry() {
     var inputCountry = d3.select("#Country");
     console.log("insidefiltercountry")
