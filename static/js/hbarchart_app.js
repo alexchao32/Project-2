@@ -85,9 +85,11 @@ var Dystopia=[]
 //#########################################################################
 
 function loadChart() {
-
-//  $(".canvasclass").remove;
-//  $(".card-body chart-container").append('<canvas id="myChart" class="jQuery"></canvas>');
+  console.log('function ran')
+  var chartElement = $('.canvasclass')
+console.log(chartElement)
+chartElement.remove();
+$("#chartReport").append('<canvas id="myChart" class="canvasclass"></canvas>');
 
 //canvas.html("");
 
@@ -177,6 +179,14 @@ function loadfrom_getData(year) {
   //console.log("Inside load Year="+ year)
   
   //tableData=data;
+  Country=[]
+  Economy=[]
+  Family=[]
+  Freedom=[]
+  Generosity=[]
+  LifeExpectancy= [] 
+  Trust=[]
+  Dystopia=[]
 
   Object.entries(data).forEach(function([key, value]) {
     //console.log("inside loadfrom")
