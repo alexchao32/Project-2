@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>World Happiness Scores</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
+  <link rel="stylesheet" href="static/css/hbarchart_style.css">
+  
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Main link for home page -->
+            <div class="nav navbar-nav navbar-brand">
+                <a href="/" id="navbar-button">Home</a>
+            </div>          
+        </div>
+    </nav>
+    <h1 class="text-muted" style="color: purple">Ranking of Happiness</h1>
+    <div class="container">
+      <div class="row">
+          <div class="col-12">
+              <div class="card">
+                  <div class="card-header" style="color:rgb(68, 57, 67)">
+                    
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title" style="color:rgb(102, 20, 95)">“The World Happiness Report offers the world’s governments and individuals the opportunity to rethink public policies as well as individual life choices, to raise happiness and wellbeing. We are in an era of rising tensions and negative emotions and these findings point to underlying challenges that need to be addressed.”
+                        - — Prof. Jeffrey Sachs</h5>
+                    <p class="card-text" style="color:brown">Explained by six significant factors which contribute to happiness; GDP per capita, Family(social support), life expectancy, freedom to make life choices, generosity and corruption levels.
+                    </p>
+                    <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                   <!-- buttons -->
+          <button id="btn_2018" type="button" class="btn btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off" onclick="loadfrom_getData(2018)">2018</button>
+          <button type="button" class="btn btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off" onclick="loadfrom_getData(2017)">2017</button>
+          <button type="button" class="btn btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off" onclick="loadfrom_getData(2016)">2016</button>
+          <button type="button" class="btn btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off" onclick="loadfrom_getData(2015)">2015</button>
+  
+                  </div>
+                 </div>
+              <div class="card">
+                  <div id="chartReport" class="card-body chart-container" >
+                      <canvas id="myChart" class="canvasclass"></canvas>
+                  </div>
+                 
+              
+              </div>
+          </div>
+       </div>
+   </div>
+   
+  
+    <!-- CHART JS LIBRARY-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script>
+    
+    <!--APEX CHARTS JS LIBRARY-->
+    <!--<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>-->
+  
+  
+  <!-- <canvas id="myChart"  ></canvas> -->
+  
+  </div>
+  <script src="../static/js/hbarchart_app.js"></script>
+  </body>
+  </html>
+  
+  
