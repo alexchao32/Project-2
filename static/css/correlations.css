@@ -1,0 +1,146 @@
+html {
+    position: relative;
+    min-height: 100%;
+  }
+  
+  body {
+    position: relative;
+    height: 550px;
+    padding: 20px;
+    margin: 0;
+    background: rgb(243, 240, 240);
+    c
+    background-attachment: fixed;
+    background-position: bottom center;
+    background-size: cover;
+  }
+  
+  @media only screen and (max-width: 767px) {
+    /* If screen is less than 768 pixels (that is, small), set screen to white */
+    body {
+      background-color: #ffffff;
+    }
+  }
+ 
+  /* Navbar */
+  #navbar-button {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    color: #42ada8;
+  }
+  
+  
+  /* Section 1 */
+  /* .section1-header {
+    margin-bottom: 33px;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #42ada8;
+  } */
+  
+  .section1-content {
+    padding: 25px;
+    margin-top: 28px;
+  }
+  
+  .section1-content > p {
+    padding-top: 20px;
+    font-size: 16px;
+    line-height: 25px;
+  }
+  
+  #section1-photo {
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .section1-content {
+      padding: 0;
+      margin-top: 0;
+    }
+  }
+  
+  /* Section 2 */
+  #section2-content {
+    width: 100%;
+    padding: 25px 25px 40px;
+    margin-top: 28px;
+    background-color: #bbbbbb;
+  }
+  
+  .section2-header {
+    margin-bottom: 33px;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: #42ada8;
+  }
+  
+  .section2-photo {
+    width: 150px;
+    height: 150px;
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .section2-content {
+      padding: 0;
+      margin-top: 0;
+    }
+  }
+  
+  /* Section 3 -- Visualization Pages */
+  .section3-header {
+    margin-bottom: 33px;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: left;
+    color: #42ada8;
+  }
+  
+  .section3-content {
+    padding: 15px;
+    margin-top: 28px;
+    background-color: #ffffff;
+  }
+  
+  .section3-content > p {
+    padding-top: 20px;
+    font-size: 16px;
+    line-height: 25px;
+  }
+  
+  #section3-photo {
+    width: 640px;
+    height: 480px;
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .section3-content {
+      padding: 0;
+      margin-top: 0;
+    }
+  }
+  
+  /* Section 4 -- Comparison Page (where distinct from Section 3 elements)*/
+  
+  #section4-photo {
+    width: 480px;
+    height: 360px;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+  
+  .section4-header {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #42ada8;
+  }
