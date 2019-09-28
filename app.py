@@ -59,7 +59,12 @@ def scatter():
 @app.route("/map")
 def map():
     """Chloropleth Map"""
-    return render_template("map.html")
+    return render_template("worldmap.html")
+
+@app.route("/correlations")
+def correlations():
+    """Correlation Table"""
+    return render_template("correlations.html")
 
     # # Use Pandas to perform the sql query
     # stmt = db.session.query(Samples).statement
