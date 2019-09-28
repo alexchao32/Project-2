@@ -28,12 +28,50 @@
 
     <!-- The div where we will inject our map -->
     <div id="map"></div>
-<!-- 
-    <script type="text/javascript" src="static/js/config.js"></script> -->
-    <script type="text/javascript" src="js/test.js"></script>
+
+    <!---->
+    <div id="scatter"></div>
+
+    <script type="text/javascript" src="js/worldmap.js"></script>
     <select id="selDataset" onchange="updatePlotly(this.value)">
         <option>---</option>
         <option value="Happiness Rank">Happiness Rank</option>
+        <option value="Happiness Score">Happiness Score</option>
+        <option value="Economy (GDP per Capita)">Economy (GDP per Capita)</option>
+        <option value="Family">Family</option>
+        <option value="Health (Life Expectancy)">Health (Life Expectancy)</option>
+        <option value="Freedom">Freedom</option>
+        <option value="Trust (Government Corruption)">Trust (Government Corruption)</option>
+        <option value="Generosity">Generosity</option>
+        <option value="Dystopia Residual">Dystopia Residual</option>
+      </select>
+      <script type="text/javascript" src="js/scatter.js"></script>
+      <select id="selX" onchange="updateX(this.value)">
+        <option>---</option>
+        <option value="Happiness Rank">Happiness Rank</option>
+        <option value="Happiness Score">Happiness Score</option>
+        <option value="Economy (GDP per Capita)">Economy (GDP per Capita)</option>
+        <option value="Family">Family</option>
+        <option value="Health (Life Expectancy)">Health (Life Expectancy)</option>
+        <option value="Freedom">Freedom</option>
+        <option value="Trust (Government Corruption)">Trust (Government Corruption)</option>
+        <option value="Generosity">Generosity</option>
+        <option value="Dystopia Residual">Dystopia Residual</option>
+      </select>
+      <select id="selY" onchange="updateY(this.value)">
+        <option>---</option>
+        <option value="Happiness Rank">Happiness Rank</option>
+        <option value="Happiness Score">Happiness Score</option>
+        <option value="Economy (GDP per Capita)">Economy (GDP per Capita)</option>
+        <option value="Family">Family</option>
+        <option value="Health (Life Expectancy)">Health (Life Expectancy)</option>
+        <option value="Freedom">Freedom</option>
+        <option value="Trust (Government Corruption)">Trust (Government Corruption)</option>
+        <option value="Generosity">Generosity</option>
+        <option value="Dystopia Residual">Dystopia Residual</option>
+      </select>
+      <select id="selMarker" onchange="updateMarker(this.value)">
+        <option>---</option>
         <option value="Happiness Score">Happiness Score</option>
         <option value="Economy (GDP per Capita)">Economy (GDP per Capita)</option>
         <option value="Family">Family</option>
