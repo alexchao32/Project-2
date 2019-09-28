@@ -30,3 +30,6 @@
   p {
       color:black;
   }
+#dropdown {
+  display: inline;
+}

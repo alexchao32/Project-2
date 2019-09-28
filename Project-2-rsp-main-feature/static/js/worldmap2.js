@@ -26,7 +26,7 @@ function drawWorldMap(inputData) {
   }];
 
   var layout = {
-    width: 1200,
+    // width: 1200,
     height: 600,
     title: graphCategory,
     geo: {

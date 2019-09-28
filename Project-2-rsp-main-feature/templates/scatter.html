@@ -16,7 +16,7 @@
   <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off" onclick="loadfrom_getData(2016)">2016</button>
   <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off" onclick="loadfrom_getData(2015)">2015</button>
 
-    <div id="scatter"></div>
+
 
  
 
@@ -33,56 +33,57 @@
 <!-- <canvas id="myChart"  ></canvas> -->
 
 <script src="../static/js/scatter.js"></script>
-<tr>
-    <td><h3>X-Axis</h3></td>
-    <td><h3>Y-Axis</h3></td>
-    <td><h3>Marker Size</h3></td>
-  </tr>
 
-<tr>
-  <td>
-<select id="selX" onchange="updateX(this.value)">
-    <option>---</option>
-    <option value="HappinessRank">Happiness Rank</option>
-    <option value="HappinessScore">Happiness Score</option>
-    <option value="Economy">Economy (GDP per Capita)</option>
-    <option value="Family">Family</option>
-    <option value="LifeExpectancy">Health (Life Expectancy)</option>
-    <option value="Freedom">Freedom</option>
-    <option value="Trust">Trust (Government Corruption)</option>
-    <option value="Generosity">Generosity</option>
-    <option value="Dystopia">Dystopia Residual</option>
-  </select>
-</td>
-<td>
-  <select id="selY" onchange="updateY(this.value)">
-    <option>---</option>
-    <option value="HappinessRank">Happiness Rank</option>
-    <option value="HappinessScore">Happiness Score</option>
-    <option value="Economy">Economy (GDP per Capita)</option>
-    <option value="Family">Family</option>
-    <option value="LifeExpectancy">Health (Life Expectancy)</option>
-    <option value="Freedom">Freedom</option>
-    <option value="Trust">Trust (Government Corruption)</option>
-    <option value="Generosity">Generosity</option>
-    <option value="Dystopia">Dystopia Residual</option>
-  </select>
-  </td>
-  <td>
-  <select id="selMarker" onchange="updateMarker(this.value)">
-    <option>---</option>
-    <option value="HappinessScore">Happiness Score</option>
-    <option value="Economy">Economy (GDP per Capita)</option>
-    <option value="Family">Family</option>
-    <option value="LifeExpectancy">Health (Life Expectancy)</option>
-    <option value="Freedom">Freedom</option>
-    <option value="Trust">Trust (Government Corruption)</option>
-    <option value="Generosity">Generosity</option>
-    <option value="Dystopia">Dystopia Residual</option>
-  </select>
-</td>
-  </tr>
+    <div id="dropdown" label="Test">
+      <label for "selX"><h4>X-Axis</h4></label>
+      <!-- <h3>X-Axis</h3> -->
+      <select id="selX" onchange="updateX(this.value)">
+          <option>---</option>
+          <option value="HappinessRank">Happiness Rank</option>
+          <option value="HappinessScore">Happiness Score</option>
+          <option value="Economy">Economy (GDP per Capita)</option>
+          <option value="Family">Family</option>
+          <option value="LifeExpectancy">Health (Life Expectancy)</option>
+          <option value="Freedom">Freedom</option>
+          <option value="Trust">Trust (Government Corruption)</option>
+          <option value="Generosity">Generosity</option>
+          <option value="Dystopia">Dystopia Residual</option>
+        </select>
+    </div>
 
+    <div id="dropdown">
+      <!-- <h3>Y-Axis</h3> -->
+      <label for "selY"><h4>Y-Axis</h4></label>
+      <select id="selY" onchange="updateY(this.value)" label="Y-Axis">
+        <option>---</option>
+        <option value="HappinessRank">Happiness Rank</option>
+        <option value="HappinessScore">Happiness Score</option>
+        <option value="Economy">Economy (GDP per Capita)</option>
+        <option value="Family">Family</option>
+        <option value="LifeExpectancy">Health (Life Expectancy)</option>
+        <option value="Freedom">Freedom</option>
+        <option value="Trust">Trust (Government Corruption)</option>
+        <option value="Generosity">Generosity</option>
+        <option value="Dystopia">Dystopia Residual</option>
+      </select>
+  </div>
+
+      <div id="dropdown">
+          <label for "selMarker"><h4>Marker Size</h4></label>
+        <select id="selMarker" onchange="updateMarker(this.value)">
+          <option>---</option>
+          <option value="HappinessScore">Happiness Score</option>
+          <option value="Economy">Economy (GDP per Capita)</option>
+          <option value="Family">Family</option>
+          <option value="LifeExpectancy">Health (Life Expectancy)</option>
+          <option value="Freedom">Freedom</option>
+          <option value="Trust">Trust (Government Corruption)</option>
+          <option value="Generosity">Generosity</option>
+          <option value="Dystopia">Dystopia Residual</option>
+        </select>
+  </div>
+
+  <div id="scatter"></div>
 </body>
 </html>
 

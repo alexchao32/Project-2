@@ -40,7 +40,7 @@ function drawScatter(inputData) {
   
   // Define the plot layout
   var layout = {
-    width: 800,
+    // width: 1200,
     height: 800,
     title: "Country Happiness Factor Comparisons",
     xaxis: { title: xAxis },

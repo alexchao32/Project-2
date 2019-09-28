@@ -16,7 +16,7 @@
   <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off" onclick="loadfrom_getData(2016)">2016</button>
   <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off" onclick="loadfrom_getData(2015)">2015</button>
 
-    <div id="worldmap"></div>
+
 
  
 
@@ -33,7 +33,9 @@
 <!-- <canvas id="myChart"  ></canvas> -->
 
 <script src="../static/js/worldmap2.js"></script>
-<h3>Graph Category</h3>
+<!-- <h3>Graph Category</h3> -->
+<div id="dropdown" label="Test">
+<label for "selGraph"><h4>Graph Category</h4></label>
 <select id="selGraph" onchange="updateGraph(this.value)">
     <option>---</option>
     <option value="HappinessRank">Happiness Rank</option>
@@ -46,6 +48,9 @@
     <option value="Generosity">Generosity</option>
     <option value="Dystopia">Dystopia Residual</option>
   </select>
+</div>
+
+<div id="worldmap"></div>
 </body>
 </html>
 
