@@ -6,12 +6,14 @@ The reports review the state of happiness in the world today and shows how the n
 With this project we hope to present a user interactive application with multiple visualizations to understand how the world happiness is measured.
 
 JS Libraries (TBD) : D3, Plotly , Charts
+
 Group Members:
 Alex Chao
 Carly Osborne
 Evan Johnson
 Mohamed Baddreddine
 Rima Susan Philip
+
 Datasets:
 https://www.kaggle.com/unsdsn/world-happiness
 Three datasets (2015, 2016 & 2017)
